@@ -10,7 +10,8 @@ $().ready(function() {
     });
 
     $('nav a[href*="#"]').on('click', function(){
-        $('html, body').animate({scrollTop:$($this).attr('href').offset().top - 100});
+        // $('html, body').animate({scrollTop:$($this).attr('href').offset().top - 100});
+        $(this).toggleClass('open')
     });
 
     $('#up').on('click', function(){
