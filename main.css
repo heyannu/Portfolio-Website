@@ -15,6 +15,24 @@ body{
     background: url("./images/background1.jpg") no-repeat center fixed;
     background-size:cover;
 }
+.button1{
+    background:linear-gradient(to top, #661616, #a84e4e);
+  border: none;
+  color: white;
+  padding:2vh 3vh;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4vh;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.button1.hover{
+    box-shadow: 0 12px 16px 0 rgba(255, 255, 255, 0.24),0 17px 50px 0 rgba(168, 155, 155, 0.19);
+}
 
 section{
     padding: 0  6% 6% 6%;
@@ -179,7 +197,7 @@ li{
     background:linear-gradient(to top, #661616, #a84e4e);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    padding:5vh 5vw;
+    padding:1vh 5vw;
     user-select: none;   
 }
 
