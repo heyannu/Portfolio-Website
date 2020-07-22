@@ -5,8 +5,8 @@
     box-sizing: border-box;
 }
 html{
-    font: size 10px;
-    font-family:'Roboto', sans-serif;
+    /* font-size: 10px; */
+    /* font-family:'Roboto', sans-serif; */
     color: #eee;
 }
 body{
@@ -15,15 +15,9 @@ body{
     background: url("./images/background1.jpg") no-repeat center fixed;
     background-size:cover;
 }
-/* 
-hr{
-   border: 3px solid #812020;
-   width: 7.5rem;
-   margin: 2rem 7rem;
-} */
 
 section{
-    padding: 6rem;
+    padding: 0  6% 6% 6%;
 }
 
 a{
@@ -41,7 +35,7 @@ img{
 /* reusable */
 .container{
     width:90%;
-    max-width: 120rem;
+    max-width: 800vh;
     height:100%;
     margin:0 auto;
     position:relative;
@@ -49,16 +43,17 @@ img{
 
 .section-heading{
     text-align: center;
-    margin-bottom: 10rem;
+    margin-bottom: 3vh;
 }
 
 .section-heading h1{
-    font-size: 3.5rem;
+    font-size: 8vh;
     color: rgba(255,255,255, 0.5);
     text-transform: uppercase;
     font-weight: 300;
     position: relative;
-    margin-bottom:1rem;
+    margin-top: 8vh;
+    margin-bottom:4vh;
 }
 
 
@@ -67,7 +62,7 @@ img{
 {
     content:"";
     position:absolute;
-    bottom:-.5rem;
+    bottom:1vh;
     left: 50%;
     transform: translateX(-50%);
     background-color: rgba(255,255,255,0.75);
@@ -75,7 +70,7 @@ img{
 
 
 .section-heading h1::before{
-    width:10rem;
+    width:25vw;
     height: 3px;
     border-radius:.8rem;
 }
@@ -93,7 +88,7 @@ img{
 }
 
 .has-margin-right{
-    margin-right:5rem;
+    margin-right:6vw;
 }
 
 
@@ -101,14 +96,15 @@ img{
 header{
     width:100%;;
     height: 100vh;
+    /* margin-bottom: 11vh; */
 }
 .top-nav{
     width:100%;
-    height: 100vh;
+    height: 7vh;
     position: fixed;
-    top: -110vh;
+    top: -140vh;
     z-index: 50;
-    background: url(./images/background.jpg) no-repeat;
+    background: rgba(0,0,0,0.75);
     border-bottom-right-radius:100%;
     border-bottom-left-radius: 100%;
     transition: all 650ms cubic-bezier(1,0,0,1);
@@ -124,14 +120,14 @@ header{
 }
 
 li{
-    margin: 0 2rem;
+    margin: 0 2vw;
 }
 
 
 .nav-link{
-    font-family:'Jockey One', sans-serif;
+    font-family:'Dancing Script';
     font-size: 2rem;
-    padding:1 rem;
+    padding:0.4vw;
 }
 
 .nav-link:hover,
@@ -147,10 +143,10 @@ li{
 
 .menu-toggler{
     position:absolute;
-    top: 5rem;
-    right: 2rem;
-    width:5rem;
-    height:2rem;
+    top: 2vh;
+    right: 0vw;
+    width:5vw;
+    height:3vh;
     display:flex;
     flex-direction:column;
     justify-content:space-between;
@@ -160,7 +156,8 @@ li{
 }
 
 .bar{
-    background: linear-gradient( to right,  #661616, #a84e4e);
+    /* background: linear-gradient( to right,  #661616, #a84e4e); */
+    background: linear-gradient( to top,  #dad6d6, #3b3939);
     width:40%;
     height:4px;
     border-radius: .8rem;
@@ -177,43 +174,48 @@ li{
 }
 
 .landing-text h1{
-    font-size:5rem;
+    font-size:10vh;
     font-family:"Jockey One", sans-serif;
     background:linear-gradient(to top, #661616, #a84e4e);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    padding:1rem;
+    padding:5vh 5vw;
     user-select: none;   
 }
 
 .landing-text h6{
-    font-size: 2rem;
+    /* font-family:'Dancing Script'; */
+    font-size: 4vh;
     font-weight: 300;
 }
 
 /* About */
+.about{
+    margin-top:16vh;
+    padding:16vh 0 0 0;
+}
 .about .container{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .h6-text{
-    font-family:"Russo One"
+    font-family:"Do Hyeon"
 }
 
 .h1-text{
     font-family:"Carter One";
-    padding-bottom:1rem;
+    /* padding-bottom:3vh; */
 }
 .about-heading{
     text-align: center;
     text-transform: uppercase;
     line-height: 0;
-    margin-bottom:6rem;
+    margin-bottom:10vh;
 }
 
 .about-heading h1{
-    font-size: 10rem;
+    font-size: 13vh;
     opacity: 0.5;
 }
 
@@ -223,6 +225,7 @@ li{
 }
 
 .heading-text{
+    margin:0 3vh 0 4.5vw;
     font-family:"Merienda One";
     font-size: 1.2rem;
     text-align: justify;
@@ -242,7 +245,9 @@ li{
 
 .profile-img{
     flex: 1;
-    margin-right: 5rem;
+    padding-left: 5vh;
+    /* margin-right: 5vw; */
+    /* margin-bottom: 11vh; */
 }
 
 .about-details{
@@ -250,12 +255,20 @@ li{
 }
 
 .social-media{
-    margin-top: 5rem;
+    margin:3vh 0 5vh 5vh;
 }
 
 .social-media i{
     font-size:3rem;
     transition: color 650ms;
+}
+
+.fa-facebook{
+    background-color:#fff;
+    /* transform:scale(1.4); */
+    border-radius:5px;
+    width: 6vh;
+    height: 6vh;
 }
 
 .fa-facebook:hover{
@@ -285,10 +298,14 @@ li{
 }
 
 /* services */
+.services{
+    margin-top:0;
+    padding-top:2vh;
+}
 .my-skills{
-    margin-top:10rem;
+    /* margin-top:3vh; */
     display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(10vw, 1fr));
     grid-gap: 2.5rem;
     text-align:center;
 }
@@ -298,29 +315,29 @@ li{
     flex-direction: column;
     justify-content:center;
     align-items:center;
-    padding:2rem;
+    padding:1.2vw 1vh;
 }
 
 .skill h1{
     text-transform: uppercase;
     letter-spacing:2px;
-    margin: 2rem -2px 2rem 0;
+    margin: 0.6vh -2px 2vw 0;
 }
 
 .icon-container{
-    width: 10rem;
-    height: 10rem;
+    width: 10vw;
+    height: 21vh;
     background:linear-gradient(315deg, #ff0057,#e64a19);
     transform:skew(2deg,2deg);
     background-color: #060c21;
-    margin-bottom:2rem;
+    margin-bottom:5vh;
     display:flex;
     /* transform:rotate(45deg); */
 }
 
 .icon-container i{
     color: rgb(255, 255, 255);
-    font-size:5rem;
+    font-size:4.5vw;
     margin:auto;
     /* transform:rotate(-45deg); */
 }
@@ -339,10 +356,10 @@ li{
     transform:skew(2deg, 2deg)
 }
 .cont{
-    width: 10rem;
-    height: 10rem;
+    width: 10vw;
+    height: 21vh;
     background:url("./images/background1.jpg") no-repeat center fixed;
-    margin-bottom:2rem;
+    margin-bottom:2vh;
     display:flex;
 }
 
@@ -351,22 +368,24 @@ li{
 
 .tech-container{
     background: rgba(255, 255, 255, 0.02);
+    margin-top: 6vh;
+    padding-top:1vh;
 
 }
 
 .tech-section-heading{
-        font-size: 3.5rem;
+        font-size: 4vh;
         color: rgba(255,255,255, 0.5);
         text-transform: uppercase;
         font-weight: 300;
         position: relative;
-        margin-bottom:1rem;
-        margin-top: 1rem;;
+        margin-bottom:1vh;
+        margin-top: 1vh;
     }
 
-.tech-section-heading .h1-text{
+/* .tech-section-heading .h1-text{
     font-size:3.5rem;
-}
+} */
 
 .tech-section-heading h1::before,
 .tech-section-heading h1::after
@@ -406,7 +425,6 @@ li{
     flex-direction: column;
     justify-content:center;
     align-items:center;
-    padding:2rem;
 }
 
 .tech-skill h1{
@@ -417,8 +435,8 @@ li{
 }
 
 .tech-skill .tech-icon-container{
-    width: 10rem;
-    height: 10rem;
+    width: 7vw;
+    height: 16vh;
     margin-bottom:2rem;
     display:flex;
 }
@@ -437,34 +455,12 @@ li{
     margin-bottom:2rem;
     display:flex;
 }
-
+/* 
 .soft li{
     list-style: none;
     color: rgb(216, 56, 56);
-}
+} */
 
-/* soft skills */
-/* .my-s-skills{ */
-    /* margin-top:2rem; */
-    /* display:grid; */
-    /* grid-template-columns: repeat(auto-fit, minmax(2rem, 1fr)); */
-    /* grid-gap: 2.5rem; */
-    /* justify-content:center; */
-    
-    /* text-align:center; */
-    /* align-content: center */
-/* } */
-/* .text{ */
-    /* justify-self: center; */
-    /* align-self: center; */
-/* } */
-/* .s-skill{ */
-    /* display:flex; */
-    /* flex-direction: column; */
-    /* justify-content:center; */
-    /* align-items:center; */
-    /* padding:2rem; */
-/* } */
 
 
 /* portfolio */
@@ -472,18 +468,18 @@ li{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 5rem;
+    margin-bottom: 21vh;
 
 }
 
 .portfolio-item:last-child{
     margin-bottom: 0;
 }
-
+/* 
 .profile-img{
     width:50rem;
     flex: 1;
-}
+} */
 
 .portfolio-description{
     flex: 1;
@@ -492,36 +488,43 @@ li{
 .portfolio-img{
     /* height: 22em;
     width:22em; */
-    max-width: 22em;
-    max-height: 22em;
+    max-width: 25vw;
+    max-height: 28vh;
 }
 
 .portfolio-description h1{
-    font-size:3rem;
+    font-size:13vh;
     /* text-transform: uppercase; */
     font-weight:300;
-    margin: 1rem 0;
+    margin: 12vh 0;
     opacity: 0.5;
 }
 
 .portfolio-description h6{
-    font-size:1.5rem;
+    font-size:4vh;
     text-transform: uppercase;
     font-weight:300;
+    margin:0 2vh 0 0;
     /* opacity: 0.8; */
     color: #e44040f8;
 
 }
+
+.portfolio-description .heading-text{
+    font-size:3vh;
+    margin:0 0 3vh 0;
+}
 .hover{
     transition: transform 1s; 
+    margin-top: 2vh;
 }
 .hover:hover{
     transform: scale(1.2)
 }
 .portfolio-description .cta{
     display: inline-block;
-    margin-top: 2.5rem;
-    font-size:1rem;
+    margin-top: 1vh;
+    /* font-size:1vh; */
     text-transform: uppercase;
     color: rgba(255,255,255, 0.5);
     transition:color 650ms;
@@ -532,39 +535,47 @@ li{
 }
 
 .portfolio .cta h5{
-    font-size: 1rem;
+    font-size: 2vh;
 }
 
 
 /* timeline */
+.timeline{
+    margin-left: 3vh;
+   
+}
+.experience{
+    padding-top: 0.7vh;
+}
 .timeline ul{
     border-left: 4px solid #a33327;
     border-radius: .8rem;
     background-color: rgba(0,0,0,0.6);
     margin: 0 auto;
     position: relative;
-    padding:5rem;
+    padding:3.5vh;
     list-style: none;
     text-align: left;
-    width: 70%;
+    width: 80%;
 }
 
 .timeline h1{
-    font-size:2rem;
+    font-size:4vh;
     text-transform: uppercase;
     font-weight:300;
-    margin-bottom:1rem;
+    /* margin-bottom:1rem; */
     opacity: .5;
 }
 
 .timeline p{
-    font-size:1rem;
+    font-size:2.4vh;
+    margin-bottom:2vh;
 }
 
 .timeline .date{
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    margin-bottom:1rem;
-    padding-bottom:1rem;
+    margin-bottom:3vh;
+    padding-bottom:3vh;
     position: relative;
 }
 
@@ -584,38 +595,39 @@ li{
 
 .timeline .date::before{
     content:attr(data-date);
-    left: -21rem;
+    left: -53vh;
     text-align: right;
-    min-width: 12rem;
-    font-size: 1.5rem;
+    min-width: 12vw;
+    font-size: 2vw;
 }
 
 .timeline .date::after{
     content:'';
     box-shadow: 0 0 0 4px #503b48;
     border-radius: 100%; 
-    left: -7.9rem;
-    height: 1.5rem;
-    width:1.5rem;
+    left: -7vw;
+    height: 2vw;
+    width:2vw;
     background-color: #313534;
 }
 
 /* contact */
 .contact{
-    margin: 0 5rem;
-    background: rgba(255, 255, 255, 0.02)
+    margin: 0 1vh;
+    background: rgba(255, 255, 255, 0.02);
+    padding:17vh 3vh 36vh 5vh;
 }
 
 .info{
     display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(10rem,2fr));
-    grid-gap:2.4rem;
+    grid-template-columns: repeat(auto-fit, minmax(10vh,2fr));
+    grid-gap:2vw;
 }
 
 .info-title{
     text-align:center;
     background-color: rgba(0,0,0,0.6);
-    padding-bottom: 1.5rem;
+    padding-bottom: 4vh;
     border-radius: 15px;
 }
 
@@ -626,8 +638,8 @@ li{
 
 .i-t{
     background: rgb(129, 32, 32);
-    padding: 1rem;
-    margin-bottom: 2rem;
+    padding: 2vh;
+    margin-bottom: 4vh;
     border-radius: 15px;
 }
 /* footer */
@@ -635,17 +647,17 @@ li{
     width: 100%;
     text-align: center;
     background-color: #812020;
-    padding: 0.5rem 0;
+    padding: 1.5vh 9vh;;
     position: relative;
 }
 
 .up{
     position: absolute;
-    width: 5rem;
-    height: 5rem;
+    width: 9vh;
+    height: 9vh;
     background-color: #eee;
-    top: -2.5rem;
-    right: 5em;
+    top: -6vh;
+    left: 175vh;
     border-radius: 100%;
     display: flex;
     animation:pulse 2s infinite;
@@ -654,12 +666,12 @@ li{
 
 .up i{
     color: #16162d;
-    font-size:2rem;
+    font-size:4vh;
     margin:auto;
 }
 
 .copyright p{
-    font-size:1.4rem ;
+    font-size:2vh ;
 }
 
 @keyframes pulse {
@@ -770,7 +782,7 @@ li{
     }
 
     .profile-img{
-        margin: 0 0 7rem 0;;
+        margin: 0 0 0 0;
     }
 
     .portfolio-item{
@@ -805,9 +817,9 @@ li{
     
     
 .tech-skill .tech-icon-container{
-    width: 6rem;
-    height: 6rem;
-    margin-bottom:2rem;
+    width: 8vw;
+    height: 16vh;
+    margin-bottom:2vh;
     display:flex;
 }
 
