@@ -1163,9 +1163,7 @@ li{
 }
 
 @media screen and (max-width:450px){
-    body{
-        background:url("./images/background.jpg") no-repeat center fixed;
-    }
+    
     .landing-text h1{
             font-size:6vh;
         }
