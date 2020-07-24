@@ -5,8 +5,6 @@
     box-sizing: border-box;
 }
 html{
-    /* font-size: 10px; */
-    /* font-family:'Roboto', sans-serif; */
     color: #eee;
 }
 body{
@@ -15,7 +13,87 @@ body{
     background: url("./images/background1.jpg") no-repeat center fixed;
     background-size:cover;
 }
-.button1{
+
+.ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .li {
+    list-style: none;
+  }
+  
+  .lie{
+    font-size: 4.5vh;
+    justify-content:center;
+    align-content:center;
+    color: #fff;
+    margin-top: 2vh;
+}
+
+.a {
+    position: relative; 
+    display: block;
+    width: 9vh;
+    height: 9vh;
+    text-align: center;
+    line-height: 63px;
+    background: #333;
+    border-radius: 50%;
+    font-size: 30px;
+    color: #666;
+    transition: .5s;
+  }
+  .a img{
+      width: 6vh;
+      height: 6vh;
+      margin-top: 2vh;
+  }
+ .a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #c42525;
+    transition: .5s;
+    transform: scale(.9);
+    z-index: -1;
+    content: "";
+}
+.vtext{
+    visibility: hidden;
+}  
+.vtext:hover{
+    visibility: visible;
+}
+  .a:hover::before {
+    
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #c42525;
+  }
+  
+  .a:hover {
+    box-shadow: 0 0 5px #c42525;
+    /* text-shadow: 0 0 5px #c42525; */
+  }
+
+.a .git{
+    width: 10vh;
+    height: 9vh;
+    margin-top: 0;
+    margin-left:-0.7vh;
+}
+.a .git1{
+    width: 7vh;
+    height: 7vh;
+    margin-top: 0;
+}
+
+  .button1{
     background:linear-gradient(to top, #661616, #a84e4e);
   border: none;
   color: white;
@@ -264,6 +342,7 @@ li{
 .profile-img{
     flex: 1;
     padding-left: 5vh;
+    border-radius:50%;
     /* margin-right: 5vw; */
     /* margin-bottom: 11vh; */
 }
@@ -277,7 +356,7 @@ li{
 }
 
 .social-media i{
-    font-size:3rem;
+    font-size:6vh;
     transition: color 650ms;
 }
 
@@ -285,8 +364,8 @@ li{
     background-color:#fff;
     /* transform:scale(1.4); */
     border-radius:5px;
-    width: 6vh;
-    height: 6vh;
+    width: 5.4vh;
+    height: 5.4vh;
 }
 
 .fa-facebook:hover{
@@ -452,7 +531,7 @@ li{
     margin: 2rem -2px 2rem 2rem;
 }
 
-.tech-skill .tech-icon-container{
+/* .tech-skill .tech-icon-container{
     width: 7vw;
     height: 16vh;
     margin-bottom:2rem;
@@ -462,8 +541,8 @@ li{
 .tech-skill .tech-icon-container i{
     color: rgb(38, 7, 68);
     /* font-size:1rem; */
-    margin:auto;
-}
+    /* margin:auto; */ 
+/* } */
 
 .tech-icon .soft{
     width: 10rem;
@@ -675,7 +754,7 @@ li{
     height: 9vh;
     background-color: #eee;
     top: -6vh;
-    left: 175vh;
+    left: 200vh;
     border-radius: 100%;
     display: flex;
     animation:pulse 2s infinite;
@@ -713,6 +792,9 @@ li{
         background-size:cover;
     }
 
+    .container .profile-img{
+        border-radius:75%
+    }
     .landing-text h1{
         font-size:7vh;
     }
@@ -756,6 +838,8 @@ li{
     .profile-img{
         width: 40%;
         height: 40%;
+        border-radius:50%
+
     }
     .fa-facebook{
         width: 5.5vh;
@@ -774,12 +858,12 @@ li{
     text-align:center;
 }
 
-.tech-skill .tech-icon-container {
+/* .tech-skill .tech-icon-container {
     width: 16vw;
     height: 16vh;
     margin-bottom: 2rem;
     display: flex;
-}
+} */
 .contact .section-heading h1{
     font-size:6vh
 }
@@ -939,7 +1023,8 @@ li{
     .profile-img{
         width: 48vh;
         height: 57vw;
-        margin-left: 18vh;
+        margin-left: 23vh;
+        border-radius: 50%;
     }
     .fa-facebook{
         width: 5.5vh;
@@ -969,12 +1054,12 @@ li{
     text-align:center;
 }
 
-.tech-skill .tech-icon-container {
+/* .tech-skill .tech-icon-container {
     width: 16vw;
     height: 16vh;
     margin-bottom: 2rem;
     display: flex;
-}
+} */
 .contact .section-heading h1{
     font-size:6vh
 }
@@ -1035,7 +1120,7 @@ li{
     position: absolute;
     display: block;
     top: 50%;
-    left: -6vh;
+    left: -5vh;
     transform: translateY(-50%);
 }
 
@@ -1088,138 +1173,3 @@ li{
 
 }
 
-@media screen and (max-width:360px){
-    body{
-        background: url("./images/background1.jpg") no-repeat center fixed;
-        /* background:#D4A27F; */
-        background-size:cover;
-    }
-
-    .landing-text h1{
-        font-size:2rem;
-    }
-
-    .landing-text h6{
-        font-size:0.8rem;
-    }
-
-    .nav-list{
-        flex-direction: column;
-        justify-content:center;
-    }
-
-    li{
-        /* margin: 0; */
-        font-size: 0.5rem;
-    }
-
-    .menu-toggler{
-        top:1rem;
-        left:2rem;
-    }
-    .nav-link{
-        font-size: 1rem;
-    }
-
-    img{
-        margin-left: 17.5rem;
-        width: 30%;
-        height: 30%;
-    }
-
-    .nav-list{
-        display:flex;
-        flex-direction:row;
-       
-    }
-
-    .fa{
-        display:inline-flex;
-        flex-wrap: wrap;
-    }
-    .social-media i{
-        font-size:2rem;
-    }
-    .h1-text {
-        font-family: "Carter One";
-        padding-bottom: 0.3rem;
-        font-size: 1rem;
-    }
-
-    .heading-text{
-        font-size:0.7rem;
-        padding: 0 5rem;
-        margin-left: 0.8rem;
-        text-align: justify;
-    }
-
-    .about-heading h1{
-        font-size:5rem;
-    }
-
-    .services {
-        padding:4.5rem;
-    }
-
-    .services h6{
-        display:none
-    }
-    .section-heading h1{
-        font-size:3rem;
-    }
-
-    .section-heading h1::before{
-        width: 12rem;
-        margin-left:0.8rem;
-    }
-    .tech-section-heading h1{
-        font-size:3rem;
-    }
-    
-    .about-heading .nav-list{
-        flex-direction: initial;
-    }
-
-    .about-details li{
-        margin: 0 2rem;
-    }
-
-    .icon-container{
-        width: 7rem;
-        height: 7rem;
-    }
-    .skill{
-        padding:1rem 0;
-    }
-    .experience h1{
-        font-size:1.4rem;
-    }
-    .experience h6{
-        font-size:0.9rem;
-    }
-
-    .CC, .BCC {
-        padding:0;
-        margin-top: 0;
-    }
-    .cont{
-        height: 7rem;
-    }
-    .icon-container i{
-        font-size: 4rem;
-    }
-
-    .timeline ul{
-        margin: 0 0 0 auto;
-    }
-
-    .timeline .date:before{
-        left: -20rem;
-    }
-
-    .timeline .date:after{
-        left: -5.9rem;
-    }
-
-
-    }
