@@ -778,11 +778,11 @@ li{
 /* media queries */
 
 @media screen and (max-width:768px){
-    body{
+    /* body{
         background: url("./images/background1.jpg") no-repeat center fixed;
         /* background:#D4A27F; */
-        background-size:cover;
-    }
+        /* background-size:cover; */
+    /* }  */
 
     .container .profile-img{
         border-radius:75%
