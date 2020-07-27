@@ -598,6 +598,7 @@ li{
 .hover{
     transition: transform 1s; 
     margin-top: 2vh;
+    border-radius: 15px;
 }
 .hover:hover{
     transform: scale(1.2)
@@ -1423,11 +1424,21 @@ li{
     }
 
     .portfolio-item {
-        display: flex;
-        flex-direction: column;
+       
+        /* flex-direction: column; */
         align-items: center;
         justify-content: center;
-        margin-bottom: 21vh;
+        margin-bottom: 5vh;
+    }
+
+    .one{
+        display: flex;
+        flex-direction:column;
+    }
+
+.two{
+        display: flex;
+        flex-direction: column-reverse
     }
 
     .portfolio-description h6 {
@@ -1458,10 +1469,11 @@ li{
         flex-direction: column;
     }
 
-    .hover {
-        transition: transform 1s;
-        margin: 1vh 0vw 6vw 0;
-    }
+    .hover{ transition: transform 1s;
+    margin: 1vh 0vw 9vw -8vw;
+    width: 25vh;
+    height: 21vh;
+}
     .has-margin-right {
         margin-right: 0vw;
     }
